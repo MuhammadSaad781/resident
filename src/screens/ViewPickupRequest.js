@@ -51,7 +51,7 @@ export default function ViewPickupRequest() {
       <View style={styles.greyline}></View>
       <TouchableOpacity
         style={styles.filebox}
-        onPress={() => navigation.navigate("ViewPickupRequest")}
+        onPress={() => navigation.navigate("Notification")}
       >
         <View style={{ display: "flex", flexDirection: "row" }}>
           <View style={styles.colorbox}>

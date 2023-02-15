@@ -18,7 +18,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { SelectList } from "react-native-dropdown-select-list";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-export default function Notification() {
+export default function Status() {
   const navigation = useNavigation();
   const [loaded, setloaded] = useState(false);
 

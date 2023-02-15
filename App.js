@@ -16,7 +16,7 @@ import WriteUs from "./src/screens/WriteUs";
 import AboutUs from "./src/screens/AboutUs";
 import PrivacyPolicy from "./src/screens/PrivacyPolicy";
 import TermsConditions from "./src/screens/TermsConditions";
-import ViewAllNotifications from "./src/screens/Notification";
+
 import Status from "./src/screens/Status";
 import EditAccountSetting from "./src/screens/EditAccountSetting";
 import SplashScreen from "./src/screens/SplashScreen";
