@@ -6,9 +6,17 @@ import Setting from "../screens/Setting";
 import Notification from "../screens/Notification";
 import { AntDesign } from "@expo/vector-icons";
 import WelcomePage from "../screens/WelcomePage";
-
+import * as Font from "expo-font";
 const TabNavigator = () => {
   const Tab = createBottomTabNavigator();
+  const [loaded, setloaded] = useState(false);
+  const loadfonts = async () => {
+    await Font.loadAsync({});
+    setloaded(true);
+  };
+  useEffect(() => {
+    loadfonts();
+  }, []);
 
   return (
     <Tab.Navigator
@@ -31,6 +39,9 @@ const TabNavigator = () => {
         },
         tabBarActiveTintColor: "#246BFD",
         tabBarInactiveTintColor: "gray",
+        tabBarLabelStyle: {
+          fontFamily: "CircularStd",
+        },
       })}
     >
       <Tab.Screen
